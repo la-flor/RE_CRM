@@ -1,0 +1,11 @@
+.Navbar {
+    position: absolute;
+    right: 64px;
+    top: 41px;
+}
+
+.Navbar span {
+    margin: 20px;
+    color: #B85237;
+    font-size: 35px;
+}

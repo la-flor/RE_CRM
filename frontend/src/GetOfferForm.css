@@ -1,0 +1,31 @@
+.GetOfferForm {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 91px;
+    width: 769px;
+    top: 560px;
+    border-radius: 15px;
+    border: black 1px solid;
+}
+
+.GetOfferForm-form {
+    font-size: 30px;
+}
+
+.GetOfferForm-input {
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 375px;
+    border: none;
+}
+
+.GetOfferForm-btn {
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #B85237;
+    margin: 10px;
+    padding: 15px;
+}
