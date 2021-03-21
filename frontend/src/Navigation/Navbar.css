@@ -1,0 +1,26 @@
+/* .Navbar {
+    position: absolute;
+    right: 64px;
+    top: 41px;
+}
+
+.Navbar span {
+    margin: 20px;
+    color: #B85237;
+    font-size: 35px;
+} */
+
+.navbar-title {
+    font-size: 5rem;
+    font-family: "Just_Another_Hand";
+    vertical-align: text-bottom;
+}
+
+.nav-item {
+    font-size: 2rem;
+    color: #CC2F02BF;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../Images/HamburgerIcon.png");
+}
