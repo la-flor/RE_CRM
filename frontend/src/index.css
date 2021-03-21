@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Just_Another_Hand";
+  src: local("Just_Another_Hand", url(./fonts/Just_Another_Hand/JustAnotherHand-Regular.ttf))
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #CC2F02F2;
+}
