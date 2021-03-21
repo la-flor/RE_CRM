@@ -1,9 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import "../index.css";
+import Navbar from "../Navigation/Navbar";
 import "./HomePage.css";
 import GetOfferForm from "./GetOfferForm";
-import EasySteps from "../images/EasySteps.jpg";
+import EasySteps from "../Images/EasySteps.jpg";
 
 const HomePage = () => {
     return (
