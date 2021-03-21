@@ -6,7 +6,6 @@ const GetOfferForm = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-
     }
 
     function handleChange(e) {
@@ -14,17 +13,17 @@ const GetOfferForm = () => {
     }
 
     return (
-        <div className="GetOfferForm">
+        <div className="GetOfferForm col-sm-5">
             <form className="GetOfferForm-form" onSubmit={handleSubmit}>
                 <input
-                    className="GetOfferForm-input" 
+                    className="GetOfferForm-input"
                     type="text"
                     name="Address"
                     placeholder="Enter your home address..."
                     value={formData.value}
                     onChange={handleChange}
-                    />
-                <button className="GetOfferForm-btn" >GET AN OFFER!</button>
+                />
+                <button className="GetOfferForm-btn btn">GET AN OFFER!</button>
             </form>
         </div>
     )
