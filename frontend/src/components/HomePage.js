@@ -89,8 +89,6 @@ const HomePage = () => {
                     <span className="HomePage-fact-answer">
                         We service all areas of the United States!
                     </span>
-
-
                 </div>
             </div>
         </div>
