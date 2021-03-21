@@ -1,6 +1,7 @@
 import React from "react";
 import NewLeadForm from "./NewLeadForm";
 import "./NewLeadPage.css";
+import HomeSketch from "../Images/Home_sketch.png";
 
 const NewLeadPage = () => {
     return (
@@ -11,7 +12,10 @@ const NewLeadPage = () => {
                     <a href="/">Home</a>
                 </span>
             </div>
-            <NewLeadForm />
+            <div className="NewLeadPage-form m-5 p-5 container-flex">
+                <NewLeadForm />
+                <img className="NewLeadPage-sketch" src={HomeSketch} />
+            </div>
         </div>
     )
 }
