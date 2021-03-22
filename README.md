@@ -5,6 +5,25 @@ The website features information about the company and their aquisition process.
 
 The administration has a seperate web app that allows them to track and document leads through the process of speaking with the potential sellers.
 
+The initial deployment will be soley a frontend user website that allows them to submit leads to be added to our database.  Future deployments will include the admin user interface for more advanced features and functionality.
+
+## Getting Started
+while in the backend directory in your terminal interface:  
+
+```bash
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+flask run
+```
+
+while in the frontend directory in your terminal interface:  
+
+```bash
+npm install
+npm start
+```
+
 ## Code
 
 The frontend is intended to be written in React while the backend will be written in Python.
