@@ -1,22 +1,28 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-// import { addPost } from "../actions/posts";
 import "./NewLeadForm.css";
+import submitOfferToAPI from "../API/api";
 
 const NewLeadForm = () => {
     const history = useHistory();
 
     const INITIAL_DATA = {
-        title: "",
-        description: "",
-        body: ""
+        first: "",
+        last: "",
+        email: "",
+        phone: "",
+        address: "",
+        city: "",
+        state: "",
+        zipcode: ""
     }
 
     const [formData, setFormData] = useState(INITIAL_DATA)
 
     function handleSubmit(e) {
         e.preventDefault();
-        // goHome();
+        submitOfferToAPI(formData);
+        goHome();
     }
 
     function goHome() {

@@ -14,7 +14,7 @@ const NewLeadPage = () => {
             </div>
             <div className="NewLeadPage-form m-5 p-5 container-flex">
                 <NewLeadForm />
-                <img className="NewLeadPage-sketch" src={HomeSketch} />
+                <img className="NewLeadPage-sketch" alt="" src={HomeSketch} />
             </div>
         </div>
     )
