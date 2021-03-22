@@ -19,7 +19,7 @@ const HomePage = () => {
                 </span>
             </div>
             <div className="HomePage-steps">
-                <img className="center" src={EasySteps} />
+                <img className="center" alt="Three easy steps: 1. Free Consultation 2. Firm Cash Offer 3. Fast Closing" src={EasySteps} />
             </div>
             <div className="HomePage-FAQ">
                 <h1 className="HomePage-FAQ-title p-5">FAQ</h1>
