@@ -11,9 +11,11 @@ The initial deployment will be soley a frontend user website that allows them to
 while in the backend directory in your terminal interface:  
 
 ```bash
+createdb RE_CRM
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
+python3 seed.py
 flask run
 ```
 
