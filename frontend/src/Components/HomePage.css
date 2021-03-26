@@ -16,6 +16,27 @@
   background-position: center;
 }
 
+.HomePage-getOffer {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  top: 400px;
+}
+
+.HomePage-getOffer-btn {
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #B85237;
+  padding: 15px;
+  font-weight: bold;
+  box-shadow: 10px 10px 25px #0F2A3780, -10px -10px 25px #0F2A3780, -10px 10px 25px #0F2A3780, 10px -10px 25px #0F2A3780;
+}
+
+.HomePage-getOffer-btn:hover {
+  background-color: #91331a;
+}
+
 .HomePage-infobar {
   padding-top: 5rem;
   padding-bottom: 5rem;

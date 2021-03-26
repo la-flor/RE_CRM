@@ -1,15 +1,23 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Navbar from "../Navigation/Navbar";
 import "./HomePage.css";
-import GetOfferForm from "./GetOfferForm";
 import EasySteps from "../Images/EasySteps.jpg";
 
 const HomePage = () => {
+    const history = useHistory();
+
+    function openSubmitPage() {
+        history.push("/submit")
+    }
+
     return (
         <div className="HomePage">
             <div className="HomePage-house">
                 <Navbar />
-                <GetOfferForm />
+                <div className="HomePage-getOffer col-sm-5">
+                    <button className="HomePage-getOffer-btn btn btn-block" onClick={openSubmitPage}>GET AN OFFER!</button>
+                </div>
             </div>
             <div className="HomePage-infobar">
                 <span className="HomePage-infobar-text">
