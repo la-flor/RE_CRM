@@ -8,7 +8,7 @@ const Navbar = () => {
 
         <div className="navbar navbar-expand-lg align-bottom">
             <span className="navbar-title">
-                <img src={ClockIcon} className="d-inline-block" alt="clock icon" />
+                <img src={ClockIcon} className="Navbar-clockIcon" alt="clock icon" />
                     Is it time to sell?
             </span>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
