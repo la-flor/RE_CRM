@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import "./NewLeadForm.css";
 import submitOfferToAPI from "../API/api";
+import Alert from "../Helpers/Alert";
 
 const NewLeadForm = () => {
-    const history = useHistory();
 
     const INITIAL_DATA = {
         first: "",
@@ -18,16 +17,20 @@ const NewLeadForm = () => {
     }
 
     const [formData, setFormData] = useState(INITIAL_DATA)
+    const [formErrors, setFormErrors] = useState([]);
+    const [saveConfirmed, setSaveConfirmed] = useState(false);
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
-        submitOfferToAPI(formData);
-        goHome();
-    }
+        try {
+            await submitOfferToAPI(formData);
+        } catch (errors) {
+            setFormErrors(errors);
+            return;
+        }
 
-    function goHome() {
-        setFormData(INITIAL_DATA);
-        history.push("/");
+        setFormErrors([]);
+        setSaveConfirmed(true);
     }
 
     function handleChange(e) {
@@ -36,10 +39,20 @@ const NewLeadForm = () => {
             ...formData,
             [name]: value
         }));
+        setFormErrors([]);
     }
 
     return (
-        <div className="NewLeadForm container p-xl-5 mt-4">
+        <div className="NewLeadForm container p-xl-5">
+
+            {formErrors.length
+                ? <Alert type="danger" messages={formErrors} />
+                : null}
+
+            {saveConfirmed
+                ?
+                <Alert type="success" messages={["Updated successfully."]} />
+                : null}
             <form className="form-group">
                 <div className="NewLeadForm-row row">
                     <div className="col-lg px-lg-5 pb-5 pb-lg-0">
