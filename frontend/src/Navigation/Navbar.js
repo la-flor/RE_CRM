@@ -2,6 +2,7 @@ import React from "react";
 import "../index.css";
 import "./Navbar.css";
 import ClockIcon from "../Images/ClockIcon.png";
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     return (
@@ -18,10 +19,26 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <ul className="navbar-nav ml-auto pr-5">
                     <li className="nav-item">
-                        <a className="nav-link" href="/">How It Works</a>
+                        <Link
+                            className="nav-link"
+                            to="HomePage-steps"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            How It Works
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/">FAQ</a>
+                        <Link
+                            className="nav-link"
+                            to="HomePage-FAQ"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            FAQ
+                            </Link>
                     </li>
                 </ul>
             </div>

@@ -46,3 +46,7 @@
 .navbar-toggler-icon {
     background-image: url("../Images/HamburgerIcon.png");
 }
+
+.nav-link:hover {
+    cursor: pointer;
+}
