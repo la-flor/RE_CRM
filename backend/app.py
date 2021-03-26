@@ -12,25 +12,29 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 CORS(app)
 connect_db(app)
 
-
 @app.route("/new_lead", methods=["POST"])
 def new_lead():
     """New lead submission accepted and added to database."""
+    
+    data = request.get_json()
+
+    # new seller input data
+    first = data["first"]
+    last = data["last"]
+    phone = data["phone"]
+    email = data["email"]
+
+    # new address input data
+    address = data["address"]
+    city = data["city"]
+    state = data["state"]
+    zipcode = data["zipcode"]
+
+    # checking to see if the property is already present in our database
+    if len(Lead.query.filter_by(address=address).all()) > 0:
+        return jsonify({"errors": ["This property address has already been submitted."]})
+
     try:
-        data = request.get_json()
-
-        # new seller input data
-        first = data["first"]
-        last = data["last"]
-        phone = data["phone"]
-        email = data["email"]
-
-        # new address input data
-        address = data["address"]
-        city = data["city"]
-        state = data["state"]
-        zipcode = data["zipcode"]
-        
         # if the seller is not already in the database, lets add them in
         if not len(Seller.query.filter_by(email=email).all()):
             new_seller = Seller(first=first, last=last, phone=phone, email=email)
@@ -50,6 +54,5 @@ def new_lead():
         db.session.commit()
 
         return jsonify(data)
-
     except:
-        return
+        return jsonify({"errors": ["We were unable to process the request.  Make sure all information is correct."]})
