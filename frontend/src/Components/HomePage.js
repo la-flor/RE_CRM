@@ -36,11 +36,11 @@ const HomePage = () => {
                         What class of home are you willing to buy?
                     </span>
                     <span className="HomePage-fact-answer">
-                        We buy all property types: single family, multi-family, condos, commercial, etc
+                        We buy all property types: single family, multi-family, condos, commercial, and more.
                     </span>
 
                     <span className="HomePage-fact mx-3">
-                        Do I need to do any improvements first?
+                        Do I need to do any improvements before I sell?
                     </span>
                     <span className="HomePage-fact-answer">
                         No need for all of that hassel.  We’ll take it off of your hands and do any necessary work.
@@ -50,14 +50,14 @@ const HomePage = () => {
                         How fast can you purchase my home?
                     </span>
                     <span className="HomePage-fact-answer">
-                        We can purchase your home in as little as 3 days.
+                        We can purchase your home in as little as 3 days and also offer creative financing strategies.
                     </span>
 
                     <span className="HomePage-fact mx-3">
                         What fees am I obligated to pay?
                     </span>
                     <span className="HomePage-fact-answer">
-                        No fees for you!  Us and our partners will pay all of the fees aquired in the sale.
+                        No fees for you!  Our partners and team will pay all of the fees required in the sale.
                     </span>
 
                     <span className="HomePage-fact mx-3">
@@ -66,7 +66,7 @@ const HomePage = () => {
                     <span className="HomePage-fact-answer">
                         We do an initial consultation that will require either a home visit or exchange of a video
                         walk-around.  Shortly after, we will provide you with a firm cash offer.  If accepted, we
-                        will schedule a quick closing and transfer of ownership.
+                        can schedule a quick closing and transfer of ownership.
                     </span>
 
                     <span className="HomePage-fact mx-3">
